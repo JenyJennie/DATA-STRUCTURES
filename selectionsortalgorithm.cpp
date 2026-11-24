@@ -6,7 +6,6 @@ const int MAX = 5;
 int arr[MAX] = {50, 20, 40, 10, 30};
 
 
-// SELECTION SORT
 void selectionSort() {
 
     for (int i = 0; i < MAX - 1; i++) {
@@ -29,7 +28,6 @@ void selectionSort() {
 }
 
 
-// DISPLAY
 void display() {
 
     for (int i = 0; i < MAX; i++) {
@@ -40,7 +38,6 @@ void display() {
 }
 
 
-// MAIN FUNCTION
 int main() {
 
     cout << "Before sorting:" << endl;

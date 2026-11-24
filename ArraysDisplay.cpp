@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-
-// Function to traverse and display the 2D array
 void traverse(int numbers[3][3])
 {
     cout << "\n2D Array:" << endl;

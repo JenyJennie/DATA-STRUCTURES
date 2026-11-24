@@ -8,7 +8,6 @@ int front = -1;
 int rear = -1;
 
 
-// ENQUEUE
 void enqueue(int x) {
     if (rear == MAX - 1) {
         cout << "Queue is Full" << endl;
@@ -25,7 +24,6 @@ void enqueue(int x) {
 }
 
 
-// DEQUEUE
 int dequeue() {
     if (front == -1 || front > rear) {
         cout << "Queue is Empty" << endl;
@@ -46,14 +44,12 @@ int dequeue() {
 }
 
 
-// DELETE A SPECIFIC ELEMENT
 void deleteElement(int value) {
     if (front == -1 || front > rear) {
         cout << "Queue is Empty" << endl;
         return;
     }
 
-    // Step 1: Search for the value
     int pos = -1;
 
     for (int i = front; i <= rear; i++) {
@@ -63,21 +59,17 @@ void deleteElement(int value) {
         }
     }
 
-    // Step 2: Check if value exists
     if (pos == -1) {
         cout << value << " not found in queue" << endl;
         return;
     }
 
-    // Step 3: Shift elements to the left
     for (int i = pos; i < rear; i++) {
         queueArr[i] = queueArr[i + 1];
     }
 
-    // Step 4: Reduce rear
     rear = rear - 1;
 
-    // Step 5: Reset if queue becomes empty
     if (front > rear) {
         front = -1;
         rear = -1;
@@ -87,7 +79,6 @@ void deleteElement(int value) {
 }
 
 
-// DISPLAY
 void display() {
     if (front == -1 || front > rear) {
         cout << "Queue is Empty" << endl;
@@ -102,7 +93,6 @@ void display() {
 }
 
 
-// MAIN FUNCTION
 int main() {
 
     enqueue(10);

@@ -6,7 +6,6 @@ const int MAX = 5;
 int arr[MAX] = {10, 20, 30, 40, 50};
 
 
-// LINEAR SEARCH
 void linearSearch(int value) {
 
     int pos = -1;
@@ -27,7 +26,6 @@ void linearSearch(int value) {
 }
 
 
-// DISPLAY
 void display() {
     for (int i = 0; i < MAX; i++) {
         cout << arr[i] << "\t";
@@ -36,7 +34,6 @@ void display() {
 }
 
 
-// MAIN FUNCTION
 int main() {
 
     cout << "Array elements:" << endl;
